@@ -1,10 +1,10 @@
-use std::mem::size_of;
+use core::mem::size_of;
 
 pub const T_H: f64 = 0.75;
 pub const T_0: f64 = 1.00;
 pub const P_H: f64 = 0.50;
 pub const P_0: f64 = 0.25;
-pub const MAX_SPARSENESS: usize = 4; // 1 / P_0 as
+pub const MAX_SPARSENESS: usize = 4; // 1 / P_0 as usize
 pub const LARGEST_EMPTY_SEGMENT: usize = 4; // 1 * MAX_SPARSENESS
 
 pub fn ceil_div(a: usize, b: usize) -> usize {
